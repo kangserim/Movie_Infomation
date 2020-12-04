@@ -13,11 +13,13 @@ public class MovieInfo {
     String genreAlt;
     String repNationNm;
     String repGenreNm;
-    String directors;
-    String peopleNm;
-    String companys;
-    String companyCd;
-    String companyNm;
 
 }
+
+
+
+
+
+
+
 

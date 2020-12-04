@@ -1,5 +1,6 @@
 package com.example.movie_infomation;
 
+import android.graphics.Movie;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         MovieInfo item = items.get(position);
         viewHolder.setItem(item);
     }
+
 
     @Override
     public int getItemCount() {
@@ -61,10 +63,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         }
 
         public void setItem(MovieInfo item) {
-            textView.setText(item.movieNm);
-            textView2.setText(item.peopleNm +"감독");
-            textView3.setText(item.repGenreNm);
-            textView4.setText(item.openDt);
+            textView.setText("제목 : "+item.movieNm);
+            textView2.setText(" | "+item.movieNmEn);
+            textView3.setText("장르 : "+item.repGenreNm);
+            textView4.setText("개봉일 : "+item.openDt);
         }
 
     }
